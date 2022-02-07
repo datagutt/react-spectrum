@@ -122,6 +122,7 @@ export function useCalendarState<T extends DateValue>(props: CalendarStateOption
     timeZone,
     setFocusedDate(date) {
       setFocusedDate(date);
+      focusCell(date);
       setFocused(true);
     },
     focusNextDay() {
